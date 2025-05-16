@@ -4,44 +4,47 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using ResourceStorageChain.Interfaces;
 
-public class WebServiceStorage<T> : IStorage<T>
+namespace ResourceStorageChain.StorageImplementations
 {
-    private readonly string _url;
-    private readonly Func<string, T?> _parser;
-    
-    public bool CanWrite => false;
-    public TimeSpan Expiration => TimeSpan.Zero;
-    public DateTime? LastUpdate { get; private set; }
-
-    private HttpClient _httpClient = new HttpClient();
-
-    public WebServiceStorage(string url, Func<string, T?> parser)
+    public class WebServiceStorage<T> : IStorage<T>
     {
-        _url = url;
-        _parser = parser;
-    }
+        private readonly string _url;
+        private readonly Func<string, T?> _parser;
 
-    public async Task<T?> Get()
-    {
-        try
+        public bool CanWrite => false;
+        public TimeSpan Expiration => TimeSpan.Zero;
+        public DateTime? LastUpdate { get; private set; }
+
+        private HttpClient _httpClient = new HttpClient();
+
+        public WebServiceStorage(string url, Func<string, T?> parser)
         {
-            var response = await _httpClient.GetStringAsync(_url);
-            var result = _parser(response);
-
-            if (result != null)
-                LastUpdate = DateTime.Now;
-
-            return result;
+            _url = url;
+            _parser = parser;
         }
-        catch (Exception ex)
+
+        public async Task<T?> Get()
         {
-            Console.WriteLine($"Error while calling GetStringAsync: {ex.Message}");
-            return default;
-        }
-    }
+            try
+            {
+                var response = await _httpClient.GetStringAsync(_url);
+                var result = _parser(response);
 
-    public Task Set(T value)
-    {
-        throw new NotSupportedException("WebServiceStorage is read-only.");
+                if (result != null)
+                    LastUpdate = DateTime.Now;
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error while calling GetStringAsync: {ex.Message}");
+                return default;
+            }
+        }
+
+        public Task Set(T value)
+        {
+            throw new NotSupportedException("WebServiceStorage is read-only.");
+        }
     }
 }
