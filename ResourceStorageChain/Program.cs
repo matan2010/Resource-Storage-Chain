@@ -2,6 +2,9 @@
 using System.Text.Json;
 using ResourceStorageChain.Models;
 using ResourceStorageChain.Interfaces;
+using ResourceStorageChain.Services;
+using ResourceStorageChain.StorageImplementations;
+
 class Program
 {
     static async Task Main(string[] args)
