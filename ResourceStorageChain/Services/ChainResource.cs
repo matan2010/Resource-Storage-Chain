@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ResourceStorageChain.Interfaces;
 
 public class ChainResource<T> where T : class
 {

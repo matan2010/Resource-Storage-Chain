@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
+using ResourceStorageChain.Interfaces;
 
 public class WebServiceStorage<T> : IStorage<T>
 {
@@ -12,7 +13,7 @@ public class WebServiceStorage<T> : IStorage<T>
     public TimeSpan Expiration => TimeSpan.Zero;
     public DateTime? LastUpdate { get; private set; }
 
-    private readonly HttpClient _httpClient = new HttpClient();
+    private HttpClient _httpClient = new HttpClient();
 
     public WebServiceStorage(string url, Func<string, T?> parser)
     {

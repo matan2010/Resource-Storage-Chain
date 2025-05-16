@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\ResourceStorageChain\\ResourceStorageChain\\ResourceStorageChain.csproj": {}
+    "C:\\Users\\matan\\Desktop\\Resource-Storage-Chain\\ResourceStorageChain\\ResourceStorageChain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\ResourceStorageChain\\ResourceStorageChain\\ResourceStorageChain.csproj": {
+    "C:\\Users\\matan\\Desktop\\Resource-Storage-Chain\\ResourceStorageChain\\ResourceStorageChain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\ResourceStorageChain\\ResourceStorageChain\\ResourceStorageChain.csproj",
+        "projectUniqueName": "C:\\Users\\matan\\Desktop\\Resource-Storage-Chain\\ResourceStorageChain\\ResourceStorageChain.csproj",
         "projectName": "ResourceStorageChain",
-        "projectPath": "C:\\Users\\User\\source\\repos\\ResourceStorageChain\\ResourceStorageChain\\ResourceStorageChain.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\ResourceStorageChain\\ResourceStorageChain\\obj\\",
+        "projectPath": "C:\\Users\\matan\\Desktop\\Resource-Storage-Chain\\ResourceStorageChain\\ResourceStorageChain.csproj",
+        "packagesPath": "C:\\Users\\matan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matan\\Desktop\\Resource-Storage-Chain\\ResourceStorageChain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\matan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,8 +39,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -65,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.409/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

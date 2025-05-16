@@ -2,6 +2,7 @@
 using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
+using ResourceStorageChain.Interfaces;
 
 public class FileSystemStorage<T> : IStorage<T>
 {
