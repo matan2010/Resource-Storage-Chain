@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\ResourceStorageChain\ResourceStorageChain\bin\Debug\net8.0\ResourceStorageChain.exe
+C:\Users\User\source\repos\ResourceStorageChain\ResourceStorageChain\bin\Debug\net8.0\ResourceStorageChain.deps.json
+C:\Users\User\source\repos\ResourceStorageChain\ResourceStorageChain\bin\Debug\net8.0\ResourceStorageChain.runtimeconfig.json
+C:\Users\User\source\repos\ResourceStorageChain\ResourceStorageChain\bin\Debug\net8.0\ResourceStorageChain.dll
+C:\Users\User\source\repos\ResourceStorageChain\ResourceStorageChain\bin\Debug\net8.0\ResourceStorageChain.pdb
+C:\Users\User\source\repos\ResourceStorageChain\ResourceStorageChain\obj\Debug\net8.0\ResourceStorageChain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\ResourceStorageChain\ResourceStorageChain\obj\Debug\net8.0\ResourceStorageChain.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\ResourceStorageChain\ResourceStorageChain\obj\Debug\net8.0\ResourceStorageChain.AssemblyInfo.cs
+C:\Users\User\source\repos\ResourceStorageChain\ResourceStorageChain\obj\Debug\net8.0\ResourceStorageChain.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\ResourceStorageChain\ResourceStorageChain\obj\Debug\net8.0\ResourceStorageChain.dll
+C:\Users\User\source\repos\ResourceStorageChain\ResourceStorageChain\obj\Debug\net8.0\refint\ResourceStorageChain.dll
+C:\Users\User\source\repos\ResourceStorageChain\ResourceStorageChain\obj\Debug\net8.0\ResourceStorageChain.pdb
+C:\Users\User\source\repos\ResourceStorageChain\ResourceStorageChain\obj\Debug\net8.0\ResourceStorageChain.genruntimeconfig.cache
+C:\Users\User\source\repos\ResourceStorageChain\ResourceStorageChain\obj\Debug\net8.0\ref\ResourceStorageChain.dll
