@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Text.Json;
+using ResourceStorageChain.Models;
+using ResourceStorageChain.Interfaces;
 class Program
 {
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
-        Console.WriteLine("No data available.!!!!!!!!!!!!!!!!!!!!!!");
         string filePath = "exchange_rates.json";
         var memoryStorage = new MemoryStorage<ExchangeRateList>(TimeSpan.FromHours(1));
         var fileStorage = new FileSystemStorage<ExchangeRateList>(
@@ -19,7 +20,10 @@ class Program
             {
                 try
                 {
-                    return JsonSerializer.Deserialize<ExchangeRateList>(json);
+                    return JsonSerializer.Deserialize<ExchangeRateList>(json, new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
                 }
                 catch
                 {
@@ -28,12 +32,6 @@ class Program
             }
         );
 
-        ////test
-        ///
-
-        ////test
-
-
         var chain = new ChainResource<ExchangeRateList>(new List<IStorage<ExchangeRateList>>
         {
             memoryStorage,
@@ -41,17 +39,12 @@ class Program
             webServiceStorage
         });
 
-        var result = chain.GetValue();
-
-        if (result != null)
-        {
-            //Console.WriteLine($"Base: {result.Base}");
-            //Console.WriteLine($"Timestamp: {result.Timestamp}");
-        }
-        else
+        var result = await chain.GetValue();
+        if (result == null)
         {
             Console.WriteLine("No data available.");
         }
+        
     }
 
 }
