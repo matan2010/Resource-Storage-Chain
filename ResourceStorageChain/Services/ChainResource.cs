@@ -11,10 +11,36 @@ namespace ResourceStorageChain.Services
         private readonly List<IStorage<T>> _storages;
         private const int MaxCount = 1;
         private readonly SemaphoreSlim _semaphore = new SemaphoreSlim(MaxCount, MaxCount);
+        private static ChainResource<T>? _instance;
+        private static readonly object _lock = new();
 
-        public ChainResource(IEnumerable<IStorage<T>> storages)
+        private ChainResource(IEnumerable<IStorage<T>> storages)
         {
             _storages = storages.ToList();
+        }
+
+        public static void Initialize(IEnumerable<IStorage<T>> storages)
+        {
+            if (_instance == null)
+            {
+                lock (_lock)
+                {
+                    if (_instance == null)
+                    {
+                        _instance = new ChainResource<T>(storages);
+                    }
+                }
+            }
+        }
+
+        public static ChainResource<T> Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    throw new InvalidOperationException("ChainResource has not been initialized. Call Initialize() first.");
+                return _instance;
+            }
         }
 
         public async Task<T?> GetValue()
