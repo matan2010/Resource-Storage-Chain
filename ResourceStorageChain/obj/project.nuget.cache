@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "eK1EzXYEuyA=",
+  "dgSpecHash": "eDoOOoB9AJU=",
   "success": true,
   "projectFilePath": "C:\\Users\\matan\\Desktop\\Resource-Storage-Chain\\ResourceStorageChain\\ResourceStorageChain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\matan\\.nuget\\packages\\dotenv.net\\3.2.1\\dotenv.net.3.2.1.nupkg.sha512"
+  ],
   "logs": []
 }
