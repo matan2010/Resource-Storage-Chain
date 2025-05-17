@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ResourceStorageChain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5df8a6d3ddfa93ad9a00a186adff98b1c8c4d505")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e8097ccb49feb5b64bc1e198c1c8bdf1418a5d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ResourceStorageChain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ResourceStorageChain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
