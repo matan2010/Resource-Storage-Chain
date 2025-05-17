@@ -27,3 +27,6 @@ C:\Users\matan\Desktop\Resource-Storage-Chain\ResourceStorageChain\obj\Debug\net
 C:\Users\matan\Desktop\Resource-Storage-Chain\ResourceStorageChain\obj\Debug\net8.0\ResourceStorageChain.pdb
 C:\Users\matan\Desktop\Resource-Storage-Chain\ResourceStorageChain\obj\Debug\net8.0\ResourceStorageChain.genruntimeconfig.cache
 C:\Users\matan\Desktop\Resource-Storage-Chain\ResourceStorageChain\obj\Debug\net8.0\ref\ResourceStorageChain.dll
+C:\Users\matan\Desktop\Resource-Storage-Chain\ResourceStorageChain\obj\Debug\net8.0\ResourceStorageChain.csproj.AssemblyReference.cache
+C:\Users\matan\Desktop\Resource-Storage-Chain\ResourceStorageChain\bin\Debug\net8.0\dotenv.net.dll
+C:\Users\matan\Desktop\Resource-Storage-Chain\ResourceStorageChain\obj\Debug\net8.0\Resource.85753557.Up2Date
