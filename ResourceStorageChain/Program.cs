@@ -35,12 +35,13 @@ class Program
             }
         );
 
-        var chain = new ChainResource<ExchangeRateList>(new List<IStorage<ExchangeRateList>>
+        ChainResource<ExchangeRateList>.Initialize(new List<IStorage<ExchangeRateList>>
         {
             memoryStorage,
             fileStorage,
             webServiceStorage
         });
+        var chain = ChainResource<ExchangeRateList>.Instance;
 
         var result = await chain.GetValue();
         if (result == null)
