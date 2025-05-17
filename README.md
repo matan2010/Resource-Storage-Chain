@@ -63,6 +63,13 @@ Access to `GetValue()` is guarded with a `SemaphoreSlim` to prevent simultaneous
 
 ---
 
+## 🧪 Tests
+
+* Comprehensive unit tests cover core system behavior.
+* Mocked components ensure deterministic, isolated testing of all storage types.
+
+---
+
 ## 🧼 Design Principles Followed
 
 * **Clean Architecture**: Logic is separated between storage, resource management, and data models.
