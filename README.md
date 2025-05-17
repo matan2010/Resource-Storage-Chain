@@ -70,7 +70,3 @@ Access to `GetValue()` is guarded with a `SemaphoreSlim` to prevent simultaneous
 * **Failover Support**: System gracefully falls back to deeper layers in case of failure or expiration.
 
 ---
-
-
-
-אם תרצה שאכין גם את הקוד או אבנה עבורך שלד של הפרויקט, אשמח לעזור 🙂
