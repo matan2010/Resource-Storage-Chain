@@ -35,7 +35,7 @@ Each storage is queried in sequence. If data is **missing or expired**, the next
 
 An implementation of `ChainResource<ExchangeRateList>` that retrieves currency exchange rates using a 3-layered storage chain:
 
-### 🛠️ Storage Chain (outermost ➡️ innermost):
+### 🛠️ Storage Chain (innermost ➡️ outermost):
 
 1. **MemoryStorage**
 
